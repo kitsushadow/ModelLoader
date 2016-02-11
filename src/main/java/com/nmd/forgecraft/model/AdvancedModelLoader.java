@@ -21,6 +21,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  * @author cpw
  *
  */
+
 @SideOnly(Side.CLIENT)
 public class AdvancedModelLoader {
     private static Map<String, IModelCustomLoader> instances = Maps.newHashMap();
