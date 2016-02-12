@@ -26,6 +26,6 @@ public class ModBlockTileEntity extends BlockContainer {
 
 	@Override
 	public int getRenderType() {
-		return 2;
+		return -1;
 	}
 }

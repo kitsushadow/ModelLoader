@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"normal": { "model": "tutorial:tile_entity" }
+	}
+}

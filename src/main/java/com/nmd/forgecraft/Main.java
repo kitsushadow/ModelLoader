@@ -1,9 +1,10 @@
 package com.nmd.forgecraft;
 
 import com.nmd.forgecraft.blocks.ModBlocks;
+import com.nmd.forgecraft.client.render.blocks.BlockRenderRegister;
+import com.nmd.forgecraft.renderers.RendererRegistry;
 import com.nmd.forgecraft.tiles.ModTileEnts;
 
-import client.render.blocks.BlockRenderRegister;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -14,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Main.MODID, version = Main.VERSION)
 public class Main
 {
-    public static final String MODID = "examplemod";
+    public static final String MODID = "forgecraft";
     public static final String VERSION = "1.0";
     
 	@Instance
@@ -39,5 +40,6 @@ public class Main
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		//proxy.postInit(e);
+		RendererRegistry.init();
 	}
 }
