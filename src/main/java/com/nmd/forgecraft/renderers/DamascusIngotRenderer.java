@@ -43,6 +43,7 @@ public class DamascusIngotRenderer extends TileEntitySpecialRenderer {
 	public void renderBlock(TileEntTest tl, World world, int i, int j,int k, Block block) {
 
 		GL11.glPushMatrix();
+		FMLClientHandler.instance().getClient().renderEngine.bindTexture(TEXTURE1);
 		this.model.renderAll();
 		GL11.glPopMatrix();
 	}
